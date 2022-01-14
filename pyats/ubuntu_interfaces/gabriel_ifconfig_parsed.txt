@@ -1,0 +1,75 @@
+{
+  "_exclude": [],
+  "enp0s3": {
+    "counters": {
+      "rx_bytes": 4346792,
+      "rx_dropped": 0,
+      "rx_errors": 0,
+      "rx_frame": 0,
+      "rx_overruns": 0,
+      "rx_pkts": 6011,
+      "rx_value": "4.3 MB",
+      "tx_bytes": 616874,
+      "tx_carrier": 0,
+      "tx_collisions": 0,
+      "tx_dropped": 0,
+      "tx_errors": 0,
+      "tx_overruns": 0,
+      "tx_pkts": 4976,
+      "tx_value": "616.8 KB"
+    },
+    "description": "Ethernet",
+    "flags": "4163<UP,BROADCAST,RUNNING,MULTICAST>",
+    "interface": "enp0s3",
+    "ipv4": {
+      "192.168.20.2": {
+        "broadcast": "192.168.20.255",
+        "ip": "192.168.20.2",
+        "netmask": "255.255.255.0"
+      }
+    },
+    "ipv6": {
+      "fe80::5054:7c1d:dab6:2c8": {
+        "ip": "fe80::5054:7c1d:dab6:2c8",
+        "prefixlen": 64,
+        "scopeid": "0x20<link>"
+      }
+    },
+    "mac": "08:00:27:ee:75:69",
+    "mtu": 1500,
+    "txqueuelen": 1000,
+    "type": "ether"
+  },
+  "lo": {
+    "counters": {
+      "rx_bytes": 30434077,
+      "rx_dropped": 0,
+      "rx_errors": 0,
+      "rx_frame": 0,
+      "rx_overruns": 0,
+      "rx_pkts": 424707,
+      "rx_value": "30.4 MB",
+      "tx_bytes": 30434077,
+      "tx_carrier": 0,
+      "tx_collisions": 0,
+      "tx_dropped": 0,
+      "tx_errors": 0,
+      "tx_overruns": 0,
+      "tx_pkts": 424707,
+      "tx_value": "30.4 MB"
+    },
+    "description": "Local Loopback",
+    "flags": "73<UP,LOOPBACK,RUNNING>",
+    "interface": "lo",
+    "ipv6": {
+      "::1": {
+        "ip": "::1",
+        "prefixlen": 128,
+        "scopeid": "0x10<host>"
+      }
+    },
+    "mtu": 65536,
+    "txqueuelen": 1000,
+    "type": "loop"
+  }
+}

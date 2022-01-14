@@ -1,0 +1,49 @@
+
+2022-01-14 15:55:09,883: %UNICON-INFO: +++ gabriel logfile ubuntu_interfaces/connection_gabriel.txt +++
+
+2022-01-14 15:55:09,884: %UNICON-INFO: +++ Unicon plugin linux +++
+
+2022-01-14 15:55:09,886: %UNICON-INFO: +++ connection to spawn: ssh -l gabriel 192.168.20.2, id: 139671856010672 +++
+
+2022-01-14 15:55:09,887: %UNICON-INFO: connection to gabriel
+Warning: Permanently added '192.168.20.2' (ECDSA) to the list of known hosts.
+gabriel@192.168.20.2's password: 
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-46-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+185 updates can be applied immediately.
+105 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Fri Jan 14 21:08:48 2022 from 192.168.10.2
+gabriel@gabriel-VirtualBox:~$ 
+
+2022-01-14 15:55:10,435: %UNICON-INFO: +++ initializing handle +++
+
+2022-01-14 15:55:11,173: %UNICON-INFO: +++ gabriel with via 'cli': executing command 'ifconfig' +++
+ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.20.2  netmask 255.255.255.0  broadcast 192.168.20.255
+        inet6 fe80::5054:7c1d:dab6:2c8  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:ee:75:69  txqueuelen 1000  (Ethernet)
+        RX packets 6011  bytes 4346792 (4.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4976  bytes 616874 (616.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 424707  bytes 30434077 (30.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 424707  bytes 30434077 (30.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+gabriel@gabriel-VirtualBox:~$ 

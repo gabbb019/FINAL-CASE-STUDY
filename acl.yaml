@@ -1,0 +1,20 @@
+---
+- name: Configure ACL on Router 2
+  hosts: R2
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: Configuring the ACL inbound
+      ios_config:
+        lines:
+          - ip access-group 110 in
+        parents: interface f0/0
+
+    - name: Creating the ACL rules
+      ios_config:
+        lines:
+          - access-list 110 deny icmp any any
+          - access-list 110 permit ip any any
+        before: no access-list 110
+        match: exact
